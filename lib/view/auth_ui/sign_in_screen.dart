@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoesferm/view/auth_ui/forgot_password_screen.dart';
+import 'package:shoesferm/view/auth_ui/phone_sent_otp_screen.dart';
 import 'package:shoesferm/view/auth_ui/sign_up_screen.dart';
 import 'package:shoesferm/view/widgets/button_widget.dart';
 import 'package:shoesferm/view/widgets/square_tile_widget.dart';
@@ -180,12 +181,26 @@ class _SignInState extends State<SignIn> {
                 const SizedBox(
                   height: 30,
                 ),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SquareTile(imagePath: 'assets/images/google.png'),
-                    SizedBox(width: 15),
-                    SquareTile(imagePath: 'assets/images/phone.jpeg')
+                    SquareTile(
+                        onTap: () {
+                          setState(() {});
+                        },
+                        imagePath: 'assets/images/google.png'),
+                    const SizedBox(width: 15),
+                    SquareTile(
+                        onTap: () {
+                          setState(() {
+                            Navigator.push(context, MaterialPageRoute(
+                              builder: (context) {
+                                return const SentOtp();
+                              },
+                            ));
+                          });
+                        },
+                        imagePath: 'assets/images/phone.jpeg')
                   ],
                 ),
                 const SizedBox(

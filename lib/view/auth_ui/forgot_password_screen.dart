@@ -13,7 +13,7 @@ class ForgotPassword extends StatefulWidget {
 class _ForgotPasswordState extends State<ForgotPassword> {
   final _emailController3 = TextEditingController();
   final _loginKey3 = GlobalKey<FormState>();
-  bool isLoading1 = false;
+  bool isLoading3 = false;
 
   @override
   Widget build(BuildContext context) {
@@ -40,13 +40,13 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 const SizedBox(
                   height: 75,
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 300,
                   height: 60,
                   child: Text(
                     'Enter the email address associated with your account and we\'ll sent you a link to reset your password.',
                     style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.grey[700],
                         fontSize: 16,
                         fontWeight: FontWeight.w400),
                   ),
@@ -92,7 +92,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   onTap: () async {
                     if (_loginKey3.currentState!.validate()) {
                       setState(() {
-                        isLoading1 = true;
+                        isLoading3 = true;
                       });
                     }
                   },

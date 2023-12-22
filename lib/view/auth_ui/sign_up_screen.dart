@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shoesferm/view/auth_ui/phone_sent_otp_screen.dart';
 import 'package:shoesferm/view/auth_ui/sign_in_screen.dart';
 import 'package:shoesferm/view/widgets/square_tile_widget.dart';
 import 'package:shoesferm/view/widgets/textfield_widget.dart';
@@ -172,12 +173,26 @@ class _SignUpState extends State<SignUp> {
                 const SizedBox(
                   height: 20,
                 ),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SquareTile(imagePath: 'assets/images/google.png'),
-                    SizedBox(width: 15),
-                    SquareTile(imagePath: 'assets/images/phone.jpeg')
+                    SquareTile(
+                        onTap: () {
+                          setState(() {});
+                        },
+                        imagePath: 'assets/images/google.png'),
+                    const SizedBox(width: 15),
+                    SquareTile(
+                        onTap: () {
+                          setState(() {
+                            Navigator.push(context, MaterialPageRoute(
+                              builder: (context) {
+                                return const SentOtp();
+                              },
+                            ));
+                          });
+                        },
+                        imagePath: 'assets/images/phone.jpeg')
                   ],
                 ),
                 const SizedBox(
