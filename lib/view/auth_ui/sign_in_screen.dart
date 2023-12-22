@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shoesferm/view/auth_ui/forgot_password_screen.dart';
 import 'package:shoesferm/view/auth_ui/sign_up_screen.dart';
+import 'package:shoesferm/view/widgets/button_widget.dart';
 import 'package:shoesferm/view/widgets/square_tile_widget.dart';
 import 'package:shoesferm/view/widgets/textfield_widget.dart';
-import '../widgets/button_widget.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
