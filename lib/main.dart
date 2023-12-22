@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoesferm/view/auth_ui/splash_screen.dart';
+import 'package:shoesferm/view/auth_ui/forgot_password_screen.dart';
 
 main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: SplashScreen(),
+      home: ForgotPassword(),
     );
   }
 }

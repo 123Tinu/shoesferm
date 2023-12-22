@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:shoesferm/view/auth_ui/sign_in_page.dart';
+import 'package:shoesferm/view/auth_ui/sign_in_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
