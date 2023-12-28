@@ -24,6 +24,32 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 fit: BoxFit.cover,
                 image: AssetImage("assets/images/nike_wsi.jpeg")),
           ),
+          Center(
+            child: Column(
+              children: [
+                const SizedBox(
+                  height: 75,
+                ),
+                const Text(
+                  "Welcome!",
+                  style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
+                      fontSize: 40),
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  'To continue, sign in or sign up with your account.',
+                  style: TextStyle(
+                    color: Colors.grey[700],
+                    fontSize: 15,
+                  ),
+                ),
+              ],
+            ),
+          ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -49,7 +75,39 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 },
               ),
               const SizedBox(
-                height: 10,
+                height: 5,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Divider(
+                        thickness: 0.5,
+                        color: Colors.grey[400],
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 3,
+                    ),
+                    Text(
+                      'Or',
+                      style: TextStyle(color: Colors.grey[700]),
+                    ),
+                    const SizedBox(
+                      width: 3,
+                    ),
+                    Expanded(
+                      child: Divider(
+                        thickness: 0.5,
+                        color: Colors.grey[400],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 5,
               ),
               MyButton(
                 child: const Center(

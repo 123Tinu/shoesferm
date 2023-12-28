@@ -157,9 +157,15 @@ class _SignUpState extends State<SignUp> {
                           color: Colors.grey[400],
                         ),
                       ),
+                      const SizedBox(
+                        width: 3,
+                      ),
                       Text(
                         'Or continue with',
                         style: TextStyle(color: Colors.grey[700]),
+                      ),
+                      const SizedBox(
+                        width: 3,
                       ),
                       Expanded(
                         child: Divider(
