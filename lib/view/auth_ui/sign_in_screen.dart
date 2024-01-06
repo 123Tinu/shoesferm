@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:shoesferm/controller/google_sign_in_controller.dart';
 import 'package:shoesferm/view/auth_ui/forgot_password_screen.dart';
 import 'package:shoesferm/view/auth_ui/phone_sent_otp_screen.dart';
 import 'package:shoesferm/view/auth_ui/sign_up_screen.dart';
@@ -19,6 +21,8 @@ class _SignInState extends State<SignIn> {
   final _loginKey1 = GlobalKey<FormState>();
   bool _passwordVisible1 = false;
   bool isLoading1 = false;
+  final GoogleSignInController _googleSignInController =
+      Get.put(GoogleSignInController());
 
   @override
   Widget build(BuildContext context) {
@@ -192,7 +196,9 @@ class _SignInState extends State<SignIn> {
                   children: [
                     SquareTile(
                         onTap: () {
-                          setState(() {});
+                          setState(() {
+                            _googleSignInController.signInWithGoogle();
+                          });
                         },
                         imagePath: 'assets/images/google.png'),
                     const SizedBox(width: 15),

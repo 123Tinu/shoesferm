@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499560853559",
+    "project_id": "shoesferm-7bfff",
+    "storage_bucket": "shoesferm-7bfff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499560853559:android:beaff56106131c5d54cfb2",
+        "android_client_info": {
+          "package_name": "com.shoesferm.shoesferm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsqyXWMZW1C61YyFRIygUhLypq6FyPq44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
